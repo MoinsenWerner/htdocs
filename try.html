@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Website mit Cookie-Zustimmung</title>
+    <style>
+        /* Stil für das Overlay, das den gesamten Bildschirm abdeckt */
+        #cookieOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Dunkler Hintergrund */
+            color: white;
+            display: none; /* Wird später eingeblendet */
+            z-index: 9999; /* Höchste Priorität */
+            text-align: center;
+            padding-top: 150px;
+        }
+        /* Stil für den Cookie-Dialog innerhalb des Overlays */
+        #cookieOverlay .cookieContent {
+            background-color: #fff;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        /* Buttons stilisieren */
+        .btn {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn.secondary {
+            background-color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Website-Inhalte -->
+    <header>
+        <h1>Willkommen auf meiner Website!</h1>
+    </header>
+
+    <main>
+        <p>Hier findest du spannende Inhalte, aber erst musst du den Cookies zustimmen.</p>
+    </main>
+
+    <!-- Das Overlay-Banner -->
+    <div id="cookieOverlay">
+        <div class="cookieContent">
+            <h2>Cookie-Zustimmung erforderlich</h2>
+            <p>Wir verwenden Cookies, um dir das bestmögliche Erlebnis auf unserer Website zu bieten. Bitte stimme der Verwendung von Cookies zu, um fortzufahren.</p>
+            <button class="btn" onclick="acceptCookies()">Alle Cookies erlauben</button>
+            <button class="btn secondary" onclick="declineCookies()">Optionale Cookies ablehnen</button>
+        </div>
+    </div>
+
+    <script>
+        // Funktion, um Cookies zu setzen
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        // Funktion, um den Wert eines bestimmten Cookies abzurufen
+        function getCookie(name) {
+            const cookieArr = document.cookie.split(";");
+            for (let i = 0; i < cookieArr.length; i++) {
+                let cookiePair = cookieArr[i].split("=");
+                if (name == cookiePair[0].trim()) {
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+            return null;
+        }
+
+        // Funktion, um das Cookie-Overlay anzuzeigen oder auszublenden
+        function checkCookieConsent() {
+            const consent = getCookie("cookieConsent");
+            if (consent !== "accepted") {
+                document.getElementById("cookieOverlay").style.display = "block";
+            }
+        }
+
+        // Funktion, um die Cookies zu akzeptieren
+        function acceptCookies() {
+            setCookie("cookieConsent", "accepted", 365);
+            document.getElementById("cookieOverlay").style.display = "none";
+        }
+
+        // Funktion, um die Cookies abzulehnen
+        function declineCookies() {
+            setCookie("cookieConsent", "declined", 365);
+            document.getElementById("cookieOverlay").style.display = "none";
+        }
+
+        // Überprüfe den Status der Cookie-Zustimmung beim Laden der Seite
+        window.onload = function() {
+            checkCookieConsent();
+        }
+    </script>
+
+</body>
+</html>

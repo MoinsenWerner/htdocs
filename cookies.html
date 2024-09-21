@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Zustimmung</title>
+    <style>
+        /* Stil für das Cookie-Banner */
+        #cookieBanner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Anfangs nicht sichtbar */
+        }
+        .btn {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .btn.secondary {
+            background-color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+<div id="cookieBanner">
+    <h2>Die Verwendung von Cookies durch Instagram in diesem Browser erlauben?</h2>
+    <p>
+        Wir verwenden Cookies und ähnliche Technologien, um Inhalte in Meta-Produkten bereitzustellen und zu verbessern. 
+        Darüber hinaus verwenden wir sie, um mithilfe der durch Cookies auf und außerhalb von Instagram empfangenen 
+        Informationen die Sicherheit zu verbessern sowie um Meta-Produkte für Personen, die ein Konto haben, bereitzustellen 
+        und zu verbessern.
+    </p>
+    <p>
+        <b>Erforderliche Cookies:</b> Diese Cookies sind notwendig für die Nutzung von Meta-Produkten und die ordnungsgemäße 
+        Funktion unserer Websites.<br>
+        <b>Cookies anderer Unternehmen:</b> Wir verwenden diese Cookies, um dir Werbeanzeigen außerhalb von Meta-Produkten zu 
+        zeigen und Funktionen wie Karten oder Videos in Meta-Produkten anbieten zu können. Hierbei handelt es sich um optionale 
+        Cookies.
+    </p>
+    <button class="btn" onclick="acceptCookies()">Alle Cookies erlauben</button>
+    <button class="btn secondary" onclick="declineCookies()">Optionale Cookies ablehnen</button>
+</div>
+
+<script>
+    // Funktion, um Cookies zu setzen
+    function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    // Funktion, um den Wert eines bestimmten Cookies abzurufen
+    function getCookie(name) {
+        const cookieArr = document.cookie.split(";");
+        for (let i = 0; i < cookieArr.length; i++) {
+            let cookiePair = cookieArr[i].split("=");
+            if (name == cookiePair[0].trim()) {
+                return decodeURIComponent(cookiePair[1]);
+            }
+        }
+        return null;
+    }
+
+    // Funktion, um das Cookie-Banner anzuzeigen oder auszublenden
+    function checkCookieConsent() {
+        const consent = getCookie("cookieConsent");
+        if (consent !== "accepted") {
+            document.getElementById("cookieBanner").style.display = "block";
+        }
+    }
+
+    // Funktion, um die Cookies zu akzeptieren
+    function acceptCookies() {
+        setCookie("cookieConsent", "accepted", 365);
+        document.getElementById("cookieBanner").style.display = "none";
+    }
+
+    // Funktion, um die Cookies abzulehnen
+    function declineCookies() {
+        setCookie("cookieConsent", "declined", 365);
+        document.getElementById("cookieBanner").style.display = "none";
+    }
+
+    // Überprüfe den Status der Cookie-Zustimmung beim Laden der Seite
+    window.onload = function() {
+        checkCookieConsent();
+    }
+</script>
+
+</body>
+</html>

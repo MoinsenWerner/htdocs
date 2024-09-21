@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datei erstellen</title>
+</head>
+<body>
+    <button id="createFileButton">Erstelle Datei</button>
+
+    <script>
+        document.getElementById('createFileButton').addEventListener('click', function() {
+            fetch('create_file.php')
+                .then(response => response.text())
+                .then(data => alert(data))
+                .catch(error => console.error('Fehler:', error));
+        });
+    </script>
+</body>
+</html>

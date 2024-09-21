@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .editable {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            min-height: 40px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .toolbar {
+            margin-bottom: 10px;
+        }
+        .toolbar button,
+        .toolbar input[type="color"],
+        .toolbar input[type="number"] {
+            padding: 5px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .toolbar button:hover {
+            background-color: #ddd;
+        }
+        .toolbar input[type="number"] {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog Generator</h1>
+    <form id="blogForm" action="create_file.php" method="POST" enctype="multipart/form-data">
+        <label for="title">Überschrift:</label>
+        <div class="toolbar">
+            <button type="button" onclick="execCmd('bold')"><b>B</b></button>
+            <button type="button" onclick="execCmd('italic')"><i>I</i></button>
+            <button type="button" onclick="execCmd('underline')"><u>U</u></button>
+            <button type="button" onclick="execCmd('justifyLeft')">Links</button>
+            <button type="button" onclick="execCmd('justifyCenter')">Mitte</button>
+            <button type="button" onclick="execCmd('justifyRight')">Rechts</button>
+            <input type="color" id="fontColor" onchange="execCmd('foreColor', this.value)">
+            <input type="number" id="fontSize" placeholder="Größe" min="1" max="100" onchange="execCmd('fontSize', this.value)">
+        </div>
+        <div class="editable" id="title" contenteditable="true"></div>
+
+        <label for="subtitle">Unterüberschrift:</label>
+        <div class="editable" id="subtitle" contenteditable="true"></div>
+
+        <label for="author">Autor:</label>
+        <div class="editable" id="author" contenteditable="true"></div>
+
+        <label for="filename">Dateiname:</label>
+        <input type="text" id="filename" name="filename" required>
+
+        <label for="body">Textkörper:</label>
+        <div class="editable" id="body" contenteditable="true" style="height: 200px;"></div>
+
+        <label for="foother">Foother:</label>
+        <div class="editable" id="foother" contenteditable="true" style="height: 100px;"></div>
+
+        <label for="image">Bild hochladen (optional):</label>
+        <input type="file" id="image" name="image" accept="image/*">
+
+        <input type="hidden" id="fileContent" name="fileContent">
+
+        <button type="button" onclick="submitForm()">Erstellen</button>
+    </form>
+
+    <hr>
+
+    <h2>Vblog-Datei erstellen</h2>
+    <form id="createFileForm" action="create_file.php" method="GET">
+        <label for="target_directory">Zielverzeichnis:</label>
+        <input type="text" id="target_directory" name="target_directory" value="/opt/lampp/htdocs/news/" required>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
