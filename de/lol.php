@@ -13,11 +13,11 @@
 
     <meta property="og:title" content="Anmelden">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://site.cube-kingdom.de/user/login">
-    <meta property="og:image" content="http://site.cube-kingdom.de/storage/img/favicon.png">
+    <meta property="og:url" content="https://www.cube-kingdom.de/user/login">
+    <meta property="og:image" content="https://www.cube-kingdom.de/storage/img/favicon.png">
     <meta property="og:description" content="Cube Kingdom ist ein deutschen Minecraft Community Server, der jeden willkommen heißt!">
     <meta property="og:site_name" content="Cube Kingdom">
-    <meta name="keywords" content="Cube Kingdom, minecraft, communityserver">
+    <meta name="keywords" content="cube-kingdom, minecraft, communityserver, smp, smp-server, home, homepage">
 
     <!-- CSRF Token -->
     <?php

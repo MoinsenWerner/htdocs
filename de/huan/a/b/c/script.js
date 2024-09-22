@@ -53,14 +53,14 @@ async function submitForm() {
 
     <meta property="og:title" content="${title}">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://site.cube-kingdom.de/news/${filename}.html">
-    <meta property="og:image" content="http://site.cube-kingdom.de/storage/img/favicon.png">
+    <meta property="og:url" content="https://www.cube-kingdom.de/news/${filename}.html">
+    <meta property="og:image" content="https://www.cube-kingdom.de/storage/img/favicon.png">
     <meta property="og:description" content="${subtitle}">
     <meta property="og:site_name" content="Cube Kingdom">
     <meta property="og:article:author:username" content="${author}">
     <meta property="og:article:published_time" content="${datumString}">
     <meta property="og:article:modified_time" content="${datumString}">
-    <meta name="keywords" content="Cube Kingdom, minecraft, communityserver">
+    <meta name="keywords" content="cube-kingdom, minecraft, communityserver, smp, smp-server, home, homepage">
 
     <!-- Website Title -->
     <title>${title} | Cube Kingdom</title>

@@ -10,11 +10,11 @@
 
     <meta property="og:title" content="Passwort zurücksetzen">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://site.cube-kingdom.de/user/password/reset">
-    <meta property="og:image" content="http://site.cube-kingdom.de/storage/img/favicon.png">
+    <meta property="og:url" content="https://www.cube-kingdom.de/user/password/reset">
+    <meta property="og:image" content="https://www.cube-kingdom.de/storage/img/favicon.png">
     <meta property="og:description" content="Cube Kingdom ist ein deutschen Minecraft Community Server, der jeden willkommen heißt!">
     <meta property="og:site_name" content="Cube Kingdom">
-    <meta name="keywords" content="Cube Kingdom, minecraft, communityserver">
+    <meta name="keywords" content="cube-kingdom, minecraft, communityserver, smp, smp-server, home, homepage">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="Jqdy6Jm4V7XHlnKMiBj8Dg4jq9M0XdZUwcgm3kRE">
@@ -23,34 +23,34 @@
     <title>Passwort zurücksetzen | Cube Kingdom</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="http://site.cube-kingdom.de/storage/img/favicon.png">
+    <link rel="shortcut icon" href="https://www.cube-kingdom.de/storage/img/favicon.png">
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-    <script src="http://site.cube-kingdom.de/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-    <script src="http://site.cube-kingdom.de/assets/vendor/axios/axios.min.js" defer></script>
+    <script src="https://www.cube-kingdom.de/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://www.cube-kingdom.de/assets/vendor/axios/axios.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
-    <script src="http://site.cube-kingdom.de/assets/js/script.js" defer></script>
+    <script src="https://www.cube-kingdom.de/assets/js/script.js" defer></script>
 
     <!-- Page level scripts -->
-    <script src="http://site.cube-kingdom.de/assets/themes/revolution/js/components.js" defer></script>
-    <script src="http://site.cube-kingdom.de/assets/themes/revolution/js/script.js" defer></script>
-    <script src="http://site.cube-kingdom.de/assets/themes/revolution/js/fixedNavbar.js" defer></script>
+    <script src="https://www.cube-kingdom.de/assets/themes/revolution/js/components.js" defer></script>
+    <script src="https://www.cube-kingdom.de/assets/themes/revolution/js/script.js" defer></script>
+    <script src="https://www.cube-kingdom.de/assets/themes/revolution/js/fixedNavbar.js" defer></script>
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="http://site.cube-kingdom.de/assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://www.cube-kingdom.de/assets/vendor/bootstrap-icons/bootstrap-icons.css">
 
     <link href="https://fonts.bunny.net/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="http://site.cube-kingdom.de/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://site.cube-kingdom.de/assets/themes/revolution/css/components.css">
-    <link rel="stylesheet" href="http://site.cube-kingdom.de/assets/themes/revolution/css/animations.css">
-    <link rel="stylesheet" href="http://site.cube-kingdom.de/assets/themes/revolution/css/style.css">
+    <link href="https://www.cube-kingdom.de/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.cube-kingdom.de/assets/themes/revolution/css/components.css">
+    <link rel="stylesheet" href="https://www.cube-kingdom.de/assets/themes/revolution/css/animations.css">
+    <link rel="stylesheet" href="https://www.cube-kingdom.de/assets/themes/revolution/css/style.css">
     <style>
          :root {
             --theme-font-family: 'Roboto', sans-serif;
@@ -80,36 +80,36 @@ p {
             <a href="javascript:void(0)" id="navbarMobileOpen" class=" text-white mr-3">
                 <i class="bi-list"></i>
             </a>
-            <a href="http://site.cube-kingdom.de">
-                <img class="navbar-logo" src="http://site.cube-kingdom.de/storage/img/logo-round-bg.png" alt="">
+            <a href="https://www.cube-kingdom.de">
+                <img class="navbar-logo" src="https://www.cube-kingdom.de/storage/img/logo-round-bg.png" alt="">
             </a>
-            <a class="navbar-item " href="http://site.cube-kingdom.de">
+            <a class="navbar-item " href="https://www.cube-kingdom.de">
                 <i class="bi bi-house"></i> Startseite
             </a>
-            <a class="navbar-item " href="http://site.cube-kingdom.de/projekte">
+            <a class="navbar-item " href="https://www.cube-kingdom.de/projekte">
                 <i class="bi bi-boxes"></i> Projekte
             </a>
-            <a class="navbar-item " href="http://site.cube-kingdom.de/news">
+            <a class="navbar-item " href="https://www.cube-kingdom.de/news">
                 <i class="bi bi-journals"></i> Blog
             </a>
-            <a class="navbar-item " href="http://site.cube-kingdom.de/faq">
+            <a class="navbar-item " href="https://www.cube-kingdom.de/faq">
                 <i class="bi bi-patch-question"></i> FAQ
             </a>
-            <a class="navbar-item " href="http://site.cube-kingdom.de/ranks">
+            <a class="navbar-item " href="https://www.cube-kingdom.de/ranks">
                 <i class="bi bi-fire"></i> Ränge
             </a>
-            <a class="navbar-item " href="http://site.cube-kingdom.de/wiki">
+            <a class="navbar-item " href="https://www.cube-kingdom.de/wiki">
                 <i class="bi bi-info-circle"></i> Regeln &amp; Wiki
             </a>
-            <a class="navbar-item " href="http://site.cube-kingdom.de/support">
+            <a class="navbar-item " href="https://www.cube-kingdom.de/support">
                 <i class="bi bi-person-raised-hand"></i> Support
             </a>
         </div>
         <div class="navbar-right">
-            <a href="http://site.cube-kingdom.de/user/login" data-text="Anmelden" class="navbar-btn btn-theme">
+            <a href="https://www.cube-kingdom.de/user/login" data-text="Anmelden" class="navbar-btn btn-theme">
                     Anmelden
                 </a>
-            <a href="http://site.cube-kingdom.de/user/register" data-text="Registrieren" class="navbar-btn btn-theme-second">
+            <a href="https://www.cube-kingdom.de/user/register" data-text="Registrieren" class="navbar-btn btn-theme-second">
                         Registrieren
                     </a>
         </div>
@@ -121,32 +121,32 @@ p {
             </a>
         </div>
         <h3 class="navbar-title">Menu</h3>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="http://site.cube-kingdom.de">
+        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de">
             <i class="bi bi-house"></i> Startseite
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="http://site.cube-kingdom.de/projekte">
+        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/projekte">
             <i class="bi bi-boxes"></i> Projekte
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="http://site.cube-kingdom.de/news">
+        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/news">
             <i class="bi bi-journals"></i> Blog
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="http://site.cube-kingdom.de/faq">
+        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/faq">
             <i class="bi bi-patch-question"></i> FAQ
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="http://site.cube-kingdom.de/ranks">
+        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/ranks">
             <i class="bi bi-fire"></i> Ränge
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="http://site.cube-kingdom.de/wiki">
+        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/wiki">
             <i class="bi bi-info-circle"></i> Regeln &amp; Wiki
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="http://site.cube-kingdom.de/support">
+        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/support">
             <i class="bi bi-person-raised-hand"></i> Support
         </a>
 
 
     </div>
-    <div id="bannerHeader" scroll-to-end style="position:relative; padding-top:100px;  background: linear-gradient(90deg, rgba(36, 36, 36, 0.685) 0%, rgba(0, 0, 0, 0.322) 100%),url('http://site.cube-kingdom.de/storage/img/bg.png') center / cover no-repeat">
-        <img src="http://site.cube-kingdom.de/storage/img/logo-round-bg.png" style="width:100px;" alt="">
+    <div id="bannerHeader" scroll-to-end style="position:relative; padding-top:100px;  background: linear-gradient(90deg, rgba(36, 36, 36, 0.685) 0%, rgba(0, 0, 0, 0.322) 100%),url('https://www.cube-kingdom.de/storage/img/bg.png') center / cover no-repeat">
+        <img src="https://www.cube-kingdom.de/storage/img/logo-round-bg.png" style="width:100px;" alt="">
         <h1 class="header-text">
             Passwort zurücksetzen </h1>
         <div class="header-divider">
@@ -163,8 +163,8 @@ p {
             <div id="status-message"></div>
         </div>
         <div class="auth-card">
-            <form method="POST" action="http://site.cube-kingdom.de/user/password/email" id="captcha-form">
-                <input type="hidden" name="_token" value="Jqdy6Jm4V7XHlnKMiBj8Dg4jq9M0XdZUwcgm3kRE" autocomplete="off"> <img src="http://site.cube-kingdom.de/assets/themes/revolution/img/img_password.svg" class="card-logo mb-3" alt="">
+            <form method="POST" action="https://www.cube-kingdom.de/user/password/email" id="captcha-form">
+                <input type="hidden" name="_token" value="Jqdy6Jm4V7XHlnKMiBj8Dg4jq9M0XdZUwcgm3kRE" autocomplete="off"> <img src="https://www.cube-kingdom.de/assets/themes/revolution/img/img_password.svg" class="card-logo mb-3" alt="">
                 <h3 class="mb-3 card-title">
                     Passwort zurücksetzen
                 </h3>
@@ -183,7 +183,7 @@ p {
             </form>
         </div>
     </div>
-    <div id="footerStats" style="position:relative;  background: linear-gradient(90deg, rgba(36, 36, 36, 0.685) 0%, rgba(0, 0, 0, 0.322) 100%),url('http://site.cube-kingdom.de/storage/img/bg.png') center / cover no-repeat">
+    <div id="footerStats" style="position:relative;  background: linear-gradient(90deg, rgba(36, 36, 36, 0.685) 0%, rgba(0, 0, 0, 0.322) 100%),url('https://www.cube-kingdom.de/storage/img/bg.png') center / cover no-repeat">
 
         <div class="content-top-divider">
             <svg xmlns="http://www.w3.org/2000/svg" style="transform:rotate(180deg) translateY(-3px);" viewBox="0 0 1000 100" preserveAspectRatio="none">
@@ -217,15 +217,15 @@ p {
                         <h5 class="section-title">Hilfreiche Links</h5>
                         <div class="socials mt-3">
                             <div>
-                                <a class="socials-item" target="_blank" href="http://site.cube-kingdom.de/impressum"><i
+                                <a class="socials-item" target="_blank" href="https://www.cube-kingdom.de/impressum"><i
                                             class="bi-link-45deg"></i> Impressum</a>
                             </div>
                             <div>
-                                <a class="socials-item" target="_blank" href="http://site.cube-kingdom.de/datenschutz"><i
+                                <a class="socials-item" target="_blank" href="https://www.cube-kingdom.de/datenschutz"><i
                                             class="bi-link-45deg"></i> Datenschutz</a>
                             </div>
                             <div>
-                                <a class="socials-item" target="_blank" href="http://site.cube-kingdom.de/cps"><i
+                                <a class="socials-item" target="_blank" href="https://www.cube-kingdom.de/cps"><i
                                             class="bi-link-45deg"></i> Teste deine CPS</a>
                             </div>
                         </div>

@@ -9,11 +9,11 @@
 
         <meta property="og:title" content="Registrieren">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="http://site.cube-kingdom.de/user/register">
+        <meta property="og:url" content="https://www.cube-kingdom.de/user/register">
         <meta property="og:image" content="http://37.114.53.8/storage/img/favicon.png">
         <meta property="og:description" content="Cube Kingdom ist ein deutschen Minecraft Community Server, der jeden willkommen heißt!">
         <meta property="og:site_name" content="Cube Kingdom">
-            <meta name="keywords" content="Cube Kingdom, minecraft, communityserver">
+            <meta name="keywords" content="cube-kingdom, minecraft, communityserver, smp, smp-server, home, homepage">
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="Jqdy6Jm4V7XHlnKMiBj8Dg4jq9M0XdZUwcgm3kRE">
@@ -46,7 +46,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link href="http://site.cube-kingdom.de/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://www.cube-kingdom.de/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="http://37.114.53.8/assets/themes/revolution/css/components.css">
         <link rel="stylesheet" href="http://37.114.53.8/assets/themes/revolution/css/animations.css">
         <link rel="stylesheet" href="http://37.114.53.8/assets/themes/revolution/css/style.css">
@@ -194,7 +194,7 @@ p {
         <div id="status-message"></div>
         </div>
             <div class="auth-card">
-        <form method="POST" action="http://site.cube-kingdom.de/user/register" id="captcha-form">
+        <form method="POST" action="https://www.cube-kingdom.de/user/register" id="captcha-form">
             <input type="hidden" name="_token" value="Jqdy6Jm4V7XHlnKMiBj8Dg4jq9M0XdZUwcgm3kRE" autocomplete="off">            <img src="http://37.114.53.8/assets/themes/revolution/img/img_user.svg" class="card-logo mb-3" alt="">
             <h3 class="mb-3 card-title">
                 Registrieren
