@@ -302,7 +302,7 @@ p {
                         </div>
                     </div>
                   <div>
-                     <p>www.cube-kingdom.de has been viewed <span id="visitorCount">0</span> times.</p>
+                     <p class="footer-text">www.cube-kingdom.de has been viewed <span id="visitorCount">0</span> times.</p>
                      <script src="../counter/counter.js">
 				                    </script>
 				                </div>
