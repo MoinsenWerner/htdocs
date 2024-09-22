@@ -17,7 +17,7 @@
     <meta property="og:image" content="https://www.cube-kingdom.de/storage/img/favicon.png">
     <meta property="og:description" content="Cube Kingdom ist ein deutschen Minecraft Community Server, der jeden willkommen heißt!">
     <meta property="og:site_name" content="Cube Kingdom">
-    <meta name="keywords" content="cube-kingdom, minecraft, communityserver, smp, smp-server, home, homepage">
+    <meta name="keywords" content="cube-kingdom, minecraft, communityserver">
 
     <!-- CSRF Token -->
     <?php

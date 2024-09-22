@@ -60,7 +60,7 @@ async function submitForm() {
     <meta property="og:article:author:username" content="${author}">
     <meta property="og:article:published_time" content="${datumString}">
     <meta property="og:article:modified_time" content="${datumString}">
-    <meta name="keywords" content="cube-kingdom, minecraft, communityserver, smp, smp-server, home, homepage">
+    <meta name="keywords" content="cube-kingdom, minecraft, communityserver">
 
     <!-- Website Title -->
     <title>${title} | Cube Kingdom</title>
