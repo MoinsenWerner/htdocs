@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a57dd0fb-8c59-4045-806f-764c3044eccd" data-blockingmode="auto" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schöne Tab-Seite</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://your-image-url-here.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .time {
+            font-size: 4em;
+            margin-bottom: 0.5em;
+        }
+
+        .date {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        .search-bar {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            outline: none;
+        }
+
+        .favorites {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .favorites a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+
+        .favorites a:hover {
+            transform: scale(1.1);
+        }
+
+        .favorites img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="time" id="time">--:--</div>
+        <div class="date" id="date">Datum</div>
+        <input class="search-bar" type="text" placeholder="Mit Google suchen...">
+        <div class="favorites">
+            <a href="https://www.spotify.com" target="_blank">
+                <img src="https://your-spotify-icon-url-here.png" alt="Spotify">
+                <span>Spotify</span>
+            </a>
+            <a href="https://www.google.com" target="_blank">
+                <img src="https://your-google-icon-url-here.png" alt="Google">
+                <span>Google</span>
+            </a>
+            <!-- Weitere Links hinzufügen -->
+        </div>
+    </div>
+
+    <script>
+        function updateTime() {
+            const timeElement = document.getElementById('time');
+            const dateElement = document.getElementById('date');
+            const now = new Date();
+            const timeString = now.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+            const dateString = now.toLocaleDateString();
+            timeElement.textContent = timeString;
+            dateElement.textContent = dateString;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a57dd0fb-8c59-4045-806f-764c3044eccd" data-blockingmode="auto" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bild als Hintergrund in IndexedDB speichern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bild als Hintergrund in IndexedDB speichern</h1>
+
+    <input type="file" id="fileInput" accept="image/*">
+    <br>
+    <button id="saveBtn">Bild als Hintergrund speichern</button>
+    <br><br>
+
+    <div class="background-container">
+        <h2>Hintergrundbereich</h2>
+    </div>
+
+    <script>
+        let db;
+
+        // IndexedDB öffnen oder erstellen
+        const request = indexedDB.open('ImageDB', 1);
+
+        request.onupgradeneeded = (event) => {
+            db = event.target.result;
+            const objectStore = db.createObjectStore('images', { keyPath: 'id' });
+        };
+
+        request.onsuccess = (event) => {
+            db = event.target.result;
+            loadBackgroundImage();
+        };
+
+        request.onerror = (event) => {
+            console.error('IndexedDB Fehler:', event.target.errorCode);
+        };
+
+        // Bild speichern
+        document.getElementById('saveBtn').addEventListener('click', () => {
+            const imageData = localStorage.getItem('previewImage');
+            if (imageData) {
+                const transaction = db.transaction(['images'], 'readwrite');
+                const objectStore = transaction.objectStore('images');
+                objectStore.put({ id: 'backgroundImage', data: imageData });
+                alert('Bild wurde in IndexedDB als Hintergrund gespeichert.');
+                loadBackgroundImage();
+            } else {
+                alert('Bitte zuerst ein Bild auswählen!');
+            }
+        });
+
+        // Bildvorschau anzeigen
+        document.getElementById('fileInput').addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    localStorage.setItem('previewImage', e.target.result);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Hintergrundbild aus IndexedDB laden
+        function loadBackgroundImage() {
+            const transaction = db.transaction(['images'], 'readonly');
+            const objectStore = transaction.objectStore('images');
+            const request = objectStore.get('backgroundImage');
+
+            request.onsuccess = (event) => {
+                const result = event.target.result;
+                if (result) {
+                    document.querySelector('.background-container').style.backgroundImage = `url(${result.data})`;
+                }
+            };
+        }
+    </script>
+</body>
+</html>
