@@ -82,7 +82,7 @@ async function submitForm() {
     <script src="../assets/themes/revolution/js/components.js" defer></script>
     <script src="../assets/themes/revolution/js/script.js" defer></script>
     <script src="../assets/themes/revolution/js/fixedNavbar.js" defer></script>
-
+        
     <!-- Fonts -->
     <link rel="stylesheet" href="../.assets/vendor/bootstrap-icons/bootstrap-icons.css">
 
