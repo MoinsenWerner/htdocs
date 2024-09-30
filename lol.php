@@ -81,6 +81,15 @@
 </head>
 
 <body data-bs-theme="dark">
+
+
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'de'}, 'google_translate_element');
+          }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      
     <div id="navbarContainer" class="style-1 container flex-1">
         <div class="navbar-left">
             <a href="javascript:void(0)" id="navbarMobileOpen" class=" text-white mr-3">
