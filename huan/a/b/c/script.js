@@ -45,6 +45,8 @@ async function submitForm() {
 <html lang="de">
 
 <head>
+    <meta charset="UTF-8">
+
 <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
 <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.2.0/cookie-consent.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
@@ -59,7 +61,6 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
 
 <noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/">Free Privacy Policy Generator</a></noscript>
 <!-- End Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="${subtitle}">
     <meta name="theme-color" content="#ffbb00">
@@ -339,8 +340,10 @@ p {
     <div id="footer" class="d-md-flex justify-content-between container">
         <div>
 
-            Copyright © 2024 Cube Kingdom 
+            Copyright © 2024 Cube Kingdom
         </div>
+            <!-- Google Translate Widget -->
+            <div id="google_translate_element"></div>
     </div>
     <script>
         function copyIp(el) {
