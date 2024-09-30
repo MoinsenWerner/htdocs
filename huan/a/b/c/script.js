@@ -62,7 +62,7 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
 <noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/">Free Privacy Policy Generator</a></noscript>
 <!-- End Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="${subtitle}">
+    <meta name="description" content="${title}">
     <meta name="theme-color" content="#ffbb00">
     <meta name="author" content="${author}">
 
@@ -70,7 +70,7 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.cube-kingdom.de/news/${filename}.html">
     <meta property="og:image" content="https://www.cube-kingdom.de/storage/img/favicon.png">
-    <meta property="og:description" content="${subtitle}">
+    <meta property="og:description" content="${title}">
     <meta property="og:site_name" content="Cube Kingdom">
     <meta property="og:article:author:username" content="${author}">
     <meta property="og:article:published_time" content="${datumString}">
@@ -81,7 +81,7 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
     <title>${title} | Cube Kingdom</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../storage/img/favicon.png">
+    <link rel="shortcut icon" href="../storage/img/favicon1.ico">
 
     <!-- Scripts -->
     <script src="../../unpkg.com/aos%402.3.1/dist/aos.js" defer></script>
@@ -240,9 +240,11 @@ p {
             <div class="card shadow-sm mb-4">
                 <div class="card-body">
                     <h1 class="card-title mt-2 font-weight-bold text-center">${title}</h1><br>
-                        <img src="../storage/posts/${imageFile.name}"><br>
+                        <div style="text-align: center;">
+                            <img src="../storage/posts/${imageFile.name}"><br>
+                        </div>
                     <div class="card-text user-html-content">
-                        <p style="text-align: center;"><span style="font-size: 14pt;">${subtitle}</span><br><span style="font-size: 14pt;">${body}</span><br><br>
+                        <p style="text-align: center; font-size: 20pt;"><br><span style="font-size: 14pt;">${body}</span><br><br>
                         <br><br><span style="color: #0a54f3;">${foother}</span>
                         </p>
                     </div>
