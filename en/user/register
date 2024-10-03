@@ -10,7 +10,7 @@
         <meta property="og:title" content="Registrieren">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://www.cube-kingdom.de/user/register">
-        <meta property="og:image" content="http://37.114.53.8/storage/img/favicon.png">
+        <meta property="og:image" content="http://37.114.53.8/storage/img/favicon1.ico">
         <meta property="og:description" content="Cube Kingdom is a German Minecraft community server that welcomes everyone!">
         <meta property="og:site_name" content="Cube Kingdom">
             <meta name="keywords" content="cube-kingdom, minecraft, communityserver">
@@ -22,7 +22,7 @@
         <title>Registrieren | Cube Kingdom</title>
 
         <!-- Favicon -->
-        <link rel="shortcut icon" href="http://37.114.53.8/storage/img/favicon.png">
+        <link rel="shortcut icon" href="http://37.114.53.8/storage/img/favicon1.ico">
 
         <!-- Scripts -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>

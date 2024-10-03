@@ -14,7 +14,7 @@
     <meta property="og:title" content="Anmelden">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.cube-kingdom.de/user/login">
-    <meta property="og:image" content="https://www.cube-kingdom.de/storage/img/favicon.png">
+    <meta property="og:image" content="https://www.cube-kingdom.de/storage/img/favicon1.ico">
     <meta property="og:description" content="Cube Kingdom ist ein deutschen Minecraft Community Server, der jeden willkommen heißt!">
     <meta property="og:site_name" content="Cube Kingdom">
     <meta name="keywords" content="cube-kingdom, minecraft, communityserver">
@@ -34,7 +34,7 @@
     <title>Anmelden | Cube Kingdom</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../.storage/img/favicon.png">
+    <link rel="shortcut icon" href="../.storage/img/favicon1.ico">
 
     <!-- Scripts -->
     <script src="../../unpkg.com/aos%402.3.1/dist/aos.js" defer></script>

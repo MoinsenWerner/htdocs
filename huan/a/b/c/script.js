@@ -58,6 +58,11 @@ async function submitForm() {
   gtag('config', 'AW-16725097298');
 </script>
 
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9822553514417023"
+     crossorigin="anonymous"></script>
+
 <!-- Cookie Consent by FreePrivacyPolicy.com https://www.FreePrivacyPolicy.com -->
 <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.2.0/cookie-consent.js" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
@@ -80,7 +85,7 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
     <meta property="og:title" content="${title}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.cube-kingdom.de/news/${filename}.html">
-    <meta property="og:image" content="https://www.cube-kingdom.de/storage/img/favicon.png">
+    <meta property="og:image" content="https://www.cube-kingdom.de/storage/img/favicon1.ico">
     <meta property="og:description" content="${title}">
     <meta property="og:site_name" content="Cube Kingdom">
     <meta property="og:article:author:username" content="${author}">
