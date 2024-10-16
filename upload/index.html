@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anleitung zur Umwandlung eines Weltordners in eine ZIP-Datei</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+<script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Pfad in die Zwischenablage kopiert: " + text);
+            }).catch(err => {
+                console.error('Fehler beim Kopieren: ', err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>So wandelst du einen Weltordner in eine ZIP-Datei um:</h1>
+
+    <p>Klicke auf den Button, um den Ordnerpfad in deine Zwischenablage zu kopieren.</p>
+    <button onclick="copyToClipboard('%appdata%\\.minecraft\\saves')">Kopiere den Pfad zu den Saves</button>
+
+    <p>Öffne den Explorer mit der Tastenkombination <strong>"Windows + E"</strong>.</p>
+
+    <p>Klicke in die Pfadleiste. Diese ist hier rot markiert:</p>
+    <img src="../storage/forum/1.png" alt="Pfadleiste rot markiert">
+<br><br>
+
+    <p>Dann drücke die Tastenkombination <strong>"STRG + V"</strong>. Danach sollte die Leiste in etwa so aussehen:</p>
+    <img src="../storage/forum/2.png" alt="Explorer Pfadleiste">
+<br><br>
+
+    <p>Drücke Enter. Daraufhin solltest du in einem Ordner sein, der in etwa so aussieht:</p>
+    <img src="../storage/forum/3.png" alt="Ordneransicht">
+<br><br>
+
+    <p>Hier kann die Anzahl der Ordner, die im Bild sind, von deiner Sicht abweichen. Jeder dieser Ordner hier steht für eine deiner Singleplayerwelten.</p>
+
+    <p>Finde den Ordner deiner Welt mit deinem Event-Vorschlag, indem du so lange auf <strong>"Änderungsdatum"</strong> klickst, bis der Pfeil darin exakt so aussieht wie der im Bild:</p>
+    <img src="../storage/forum/4.png" alt="Änderungsdatum Pfeil">
+<br><br>
+
+    <p>Jetzt markierst du den obersten Ordner und komprimierst ihn zu einer ZIP-Datei.</p>
+
+    <p>Solltest du nicht wissen, wie das geht, suche bitte im Internet danach, dort wirst du eine ausführliche Erklärung dazu finden.</p>
+
+    <p>Sobald du die ZIP-Datei hast, kopierst du sie bitte in deinen Download-Ordner, damit du sie beim Hochladen leichter findest.</p>
+
+<button onclick="window.location.href='event-forum.html'">weiter zum Hochladen</button>
+</body>
+</html>
