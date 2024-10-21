@@ -179,6 +179,9 @@ p {
             <a class="navbar-item " href="../upload/event-forum.html">
                 <i class="bi bi-person-raised-hand"></i> Event Vorschläge
             </a>
+            <a class="navbar-item " href="../pluginv/index.html">
+                <i class="bi bi-person-raised-hand"></i> Plugin Vorschläge
+            </a>
         </div>
         <div class="navbar-right">
             <a href="https://dc.cube-kingdom.de" data-text="Discord" class="navbar-btn btn-theme">
@@ -225,6 +228,9 @@ p {
         </a>
         <a class="btn btn-theme-simple mt-2 btn-block " href="../upload/event-forum.html">
             <i class="bi bi-person-raised-hand"></i> Event Vorschläge
+        </a>
+        <a class="btn btn-theme-simple mt-2 btn-block " href="../pluginv/index.html">
+            <i class="bi bi-person-raised-hand"></i> Plugin Vorschläge
         </a>
 
 
