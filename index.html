@@ -62,13 +62,32 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
     <link href="https://fonts.bunny.net/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&amp;display=swap" rel="stylesheet">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" id="style1">
     <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/%40splidejs/splide%40latest/dist/css/splide.min.css">
     <link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/themes/revolution/css/components.css">
     <link rel="stylesheet" href="assets/themes/revolution/css/animations.css">
     <link rel="stylesheet" href="assets/themes/revolution/css/style.css">
+
     <style>
+
+.navbar-item.style1 {
+            color: white;                /* Textfarbe für style1 */
+            padding: 10px 20px;         /* Innenabstand */
+            text-decoration: none;       /* Unterstreichung entfernen */
+            display: inline-block;       /* Inline-Block, damit Padding funktioniert */
+        }
+
+        /* Styles für Buttons 5-8 (style2) */
+        .navbar-item.style2 {
+            color: white;                 /* Textfarbe für style2 */
+            padding: 10px 20px;          /* Innenabstand */
+            text-decoration: none;        /* Unterstreichung entfernen */
+            display: inline-block;        /* Inline-Block, damit Padding funktioniert */
+        }
+
+
          :root {
             --theme-font-family: 'Roboto', sans-serif;
             --theme-body-color: #ffffff;
@@ -104,40 +123,35 @@ p {
       
     <div id="navbarContainer" class="style-1 container flex-1">
         <div class="navbar-left">
-            <a href="javascript:void(0)" id="navbarMobileOpen" class=" text-white mr-3">
+            <a href="javascript:void(0)" id="navbarMobileOpen" class="text-white mr-3">
                 <i class="bi-list"></i>
             </a>
             <a href="index.html">
                 <img class="navbar-logo" src="storage/img/logo-round-bg.png" alt="">
             </a>
-            <a class="navbar-item  active " href="index.html">
+            <a class="navbar-item active style1" href="index.html">
                 <i class="bi bi-house"></i> Startseite
             </a>
-                       <a class="navbar-item " href="projekte.html">
+            <a class="navbar-item style1" href="projekte.html">
                 <i class="bi bi-boxes"></i> Projekte
             </a>
-            <a class="navbar-item " href="news.html">
+            <a class="navbar-item style1" href="news.html">
                 <i class="bi bi-journals"></i> Blog
             </a>
-            <a class="navbar-item " href="faq.html">
+            <a class="navbar-item style1" href="faq.html">
                 <i class="bi bi-patch-question"></i> FAQ
             </a>
-           <!--
-            <a class="navbar-item " href="wartung.html">
-                <i class="bi bi-fire"></i> Ränge
-            </a>
-         -->
-            <a class="navbar-item " href="wiki.html">
+            <a class="navbar-item style2" href="wiki.html">
                 <i class="bi bi-info-circle"></i> Regeln &amp; Wiki
             </a>
-            <a class="navbar-item " href="support.html">
+            <a class="navbar-item style2" href="support.html">
                 <i class="bi bi-person-raised-hand"></i> Support
             </a>
-            <a class="navbar-item " href="upload/event-forum.html">
-                <i class="bi bi-person-raised-hand"></i> Event Vorschläge
+            <a class="navbar-item style2" href="upload/event-forum.html">
+                <i class="fas fa-gamepad icon"></i> Event Vorschläge
             </a>
-            <a class="navbar-item " href="pluginv/index.html">
-                <i class="bi bi-person-raised-hand"></i> Plugin Vorschläge
+            <a class="navbar-item style2" href="pluginv/index.html">
+                <i class="fas fa-plug icon"></i> Plugin Vorschläge
             </a>
         </div>
         <div class="navbar-right">
@@ -158,34 +172,34 @@ p {
             </a>
         </div>
         <h3 class="navbar-title">Menu</h3>
-        <a class="btn btn-theme-simple mt-2 btn-block  active " href="index.html">
+        <a class="btn btn-theme-simple mt-2 btn-block style1 active " href="index.html">
             <i class="bi bi-house"></i> Startseite
         </a>
-               <a class="btn btn-theme-simple mt-2 btn-block " href="projekte.html">
+               <a class="btn btn-theme-simple mt-2 btn-block style1" href="projekte.html">
             <i class="bi bi-boxes"></i> Projekte
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="news.html">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="news.html">
             <i class="bi bi-journals"></i> Blog
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="faq.html">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="faq.html">
             <i class="bi bi-patch-question"></i> FAQ
         </a>
        <!--
-        <a class="btn btn-theme-simple mt-2 btn-block " href="wartung.html">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="wartung.html">
             <i class="bi bi-fire"></i> Ränge
         </a>
      -->
-        <a class="btn btn-theme-simple mt-2 btn-block " href="wiki.html">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="wiki.html">
             <i class="bi bi-info-circle"></i> Regeln &amp; Wiki
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="support.html">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="support.html">
             <i class="bi bi-person-raised-hand"></i> Support
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="upload/event-forum.html">
-            <i class="bi bi-person-raised-hand"></i> Event Vorschläge
+        <a class="btn btn-theme-simple mt-2 btn-block style2" href="upload/event-forum.html">
+            <i class="fas fa-gamepad icon"></i> Event Vorschläge
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="pluginv/index.html">
-            <i class="bi bi-person-raised-hand"></i> Plugin Vorschläge
+        <a class="btn btn-theme-simple mt-2 btn-block style2" href="pluginv/index.html">
+            <i class="fas fa-plug icon"></i> Plugin Vorschläge
         </a>
 
 

@@ -146,25 +146,25 @@ p {
             </a>
         </div>
         <h3 class="navbar-title">Menu</h3>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="https://www.cube-kingdom.de">
             <i class="bi bi-house"></i> Home
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/projekte">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="https://www.cube-kingdom.de/projekte">
             <i class="bi bi-boxes"></i> Projekte
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/news">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="https://www.cube-kingdom.de/news">
             <i class="bi bi-journals"></i> Blog
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/faq">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="https://www.cube-kingdom.de/faq">
             <i class="bi bi-patch-question"></i> FAQ
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/ranks">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="https://www.cube-kingdom.de/ranks">
             <i class="bi bi-fire"></i> Ränge
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/wiki">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="https://www.cube-kingdom.de/wiki">
             <i class="bi bi-info-circle"></i> Rules &amp; Wiki
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="https://www.cube-kingdom.de/support">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="https://www.cube-kingdom.de/support">
             <i class="bi bi-person-raised-hand"></i> Support
         </a>
 

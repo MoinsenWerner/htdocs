@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar mit FontAwesome Icons</title>
+    
+    <!-- FontAwesome CDN einbinden -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" id="style1">
+    
+    <style>
+        /* Allgemeine Stile für die Navigation und Icons */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        li {
+            display: inline;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: white; /* Icons in weißer Farbe */
+        }
+
+        /* Hover-Effekte */
+        a:hover {
+            opacity: 0.7; /* Leichter Transparenzeffekt beim Hover */
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <!-- Event Vorschläge Icon (fa-gamepad für Gaming/Events) -->
+        <li>
+            <a href="../upload/event-forum.html">
+                <i class="fas fa-gamepad icon"></i> Event Vorschläge
+            </a>
+        </li>
+        <!-- Plugin Vorschläge Icon -->
+        <li>
+            <a href="../upload/plugin-forum.html">
+                <i class="fas fa-plug icon"></i> Plugin Vorschläge
+            </a>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>

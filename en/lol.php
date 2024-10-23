@@ -138,25 +138,25 @@
             </a>
         </div>
         <h3 class="navbar-title">Menu</h3>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="../index.php">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="../index.php">
             <i class="bi bi-house"></i> Home
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="../wartung.php">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="../wartung.php">
             <i class="bi bi-boxes"></i> Projekte
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="../news.php">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="../news.php">
             <i class="bi bi-journals"></i> Blog
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="../faq.php">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="../faq.php">
             <i class="bi bi-patch-question"></i> FAQ
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="../wartung.php">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="../wartung.php">
             <i class="bi bi-fire"></i> Ränge
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="../wiki.php">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="../wiki.php">
             <i class="bi bi-info-circle"></i> Rules &amp; Wiki
         </a>
-        <a class="btn btn-theme-simple mt-2 btn-block " href="lol.php">
+        <a class="btn btn-theme-simple mt-2 btn-block style1" href="lol.php">
             <i class="bi bi-person-raised-hand"></i> Support
         </a>
     </div>
