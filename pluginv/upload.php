@@ -29,13 +29,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Prüfen, ob die Datei tatsächlich eine ZIP-Datei ist
         $fileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
         if ($fileType != 'jar') {
-            echo "Es dürfen nur ZIP-Dateien hochgeladen werden.";
+            echo "Es dürfen nur JAR-Dateien hochgeladen werden.";
             exit;
         }
 
         // Datei hochladen
         if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFile)) {
-            echo "Die Datei " . basename($_FILES["file"]["name"]) . " wurde erfolgreich hochgeladen.";
+            echo "<script>
+                window.location.href = 'https://www.cube-kingdom.de/upload/event-forum.html';
+                alert('Datei erfolgreich hochgeladen!');
+              </script>";
         } else {
             echo "Fehler beim Hochladen der Datei.";
         }
